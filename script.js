@@ -381,6 +381,7 @@ const allQuestions = [
 ];
 
 // Game state
+let sessionSeed = null;  // Opció 1: Semilla temporal per sessió
 let questions = [];
 let currentQuestion = 0;
 let score = 0;
@@ -431,6 +432,16 @@ function shuffleArray(array) {
 }
 
 function getRandomQuestions(count) {
+    // Opció 1: Semilla temporal per sessió (barreja variable)
+    const sessionSeed = localStorage.getItem('sessionSeed');
+    if (sessionSeed) {
+        // Utilitzar semilla de la sessió per aleatorietat consistent
+        Math.seedrandom(sessionSeed);
+        const seededShuffled = shuffleArray(allQuestions);
+        return seededShuffled.slice(0, count);
+    }
+    
+    // Si no hi ha semilla de sessió, utilitzar aleatorietat pura
     const shuffled = shuffleArray(allQuestions);
     return shuffled.slice(0, count);
 }
@@ -536,6 +547,11 @@ function startGame() {
     if (!validateName()) return;
     
     playerName = playerNameInput.value.trim();
+    
+    // Opció 1: Generar nova semilla de sessió per evitar memorització
+    const newSessionSeed = Date.now().toString();
+    localStorage.setItem('sessionSeed', newSessionSeed);
+    
     questions = getRandomQuestions(25);
     currentQuestion = 0;
     score = 0;
