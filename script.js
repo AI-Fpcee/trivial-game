@@ -13,8 +13,32 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
-// Opció 1: Semilla temporal per sessió (barreja variable) + Opció B: crypto.getRandomValues per més compatibilitat
-let sessionSeed = null;
+// Opció B: Crypto getRandomValues per més compatibilitat
+// Utilitzar crypto.getRandomValues en lloc de Math.seedrandom()
+// Aquesta funció és més robusta i compatible amb tots els navegadors
+if (typeof crypto.getRandomValues !== 'undefined') {
+    shuffleArray = function(array) {
+        const values = crypto.getRandomValues(new Uint8Array(array.length));
+        const shuffled = [];
+        for (let i = 0; i < array.length; i++) {
+            shuffled.push(array[values[i]]);
+        }
+        return shuffled;
+    };
+}
+
+function getRandomQuestions(count, seed) {
+    if (seed) {
+        // Utilitzar semilla de la sessió per aleatorietat consistent
+        Math.seedrandom(seed);
+        const seededShuffled = shuffleArray(allQuestions);
+        return seededShuffled.slice(0, count);
+    }
+    
+    // Si no hi ha semilla de sessió, utilitzar aleatorietat pura
+    const shuffled = shuffleArray(allQuestions);
+    return shuffled.slice(0, count);
+}
 
 // Game state
 let questions = [];
@@ -56,43 +80,7 @@ const rankingList = document.getElementById('ranking-list');
 const playBtn = document.getElementById('play-btn');
 const backBtn = document.getElementById('back-btn');
 
-// Helper functions - Canviat a Opció B
-// Utilitzar crypto.getRandomValues en lloc de Math.seedrandom
-// Aquesta funció és més robusta i compatible amb tots els navegadors
-if (typeof crypto.getRandomValues !== 'undefined') {
-    shuffleArray = function(array) {
-        const values = crypto.getRandomValues(new Uint8Array(array.length));
-        const shuffled = [];
-        for (let i = 0; i < array.length; i++) {
-            shuffled.push(array[values[i]]);
-        }
-        return shuffled;
-    };
-} else {
-    // Fallback a Math.seedrandom si crypto.getRandomValues no està disponible
-    shuffleArray = function(array) {
-        const shuffled = [...array];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        return shuffled;
-    };
-}
-
-function getRandomQuestions(count, seed) {
-    if (seed) {
-        // Utilitzar semilla de la sessió per aleatorietat consistent
-        Math.seedrandom(seed);
-        const seededShuffled = shuffleArray(allQuestions);
-        return seededShuffled.slice(0, count);
-    }
-    
-    // Si no hi ha semilla de sessió, utilitzar aleatorietat pura
-    const shuffled = shuffleArray(allQuestions);
-    return shuffled.slice(0, count);
-}
-
+// Helper functions
 function showScreen(screen) {
     [nameScreen, quizScreen, resultScreen, rankingScreen].forEach(s => {
         if (s) s.classList.remove('active');
@@ -193,7 +181,7 @@ function startGame() {
     
     playerName = playerNameInput.value.trim();
     
-    // Opció 1: Generar nova semilla de sessió per evitar memorització
+    // Opció B: Generar nova semilla de sessió per evitar memorització
     const newSessionSeed = Date.now().toString();
     localStorage.setItem('sessionSeed', newSessionSeed);
     
