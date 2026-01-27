@@ -255,6 +255,145 @@ p {
     pointer-events: none;
 }
 
+/* Input styles */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #e6007e;
+}
+
+.error-text {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Secondary button */
+.btn-secondary {
+    background: white;
+    color: #e6007e;
+    border: 2px solid #e6007e;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background: #fef0f6;
+    box-shadow: 0 10px 30px rgba(230, 0, 126, 0.2);
+}
+
+/* Player info */
+.player-info {
+    background: #fef0f6;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #e6007e;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Ranking list */
+.ranking-list {
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.ranking-item:last-child {
+    margin-bottom: 0;
+}
+
+.ranking-position {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e6007e;
+    min-width: 35px;
+}
+
+.ranking-position.gold { color: #ffd700; }
+.ranking-position.silver { color: #c0c0c0; }
+.ranking-position.bronze { color: #cd7f32; }
+
+.ranking-name {
+    flex: 1;
+    font-weight: 500;
+    color: #333;
+    margin-left: 10px;
+}
+
+.ranking-score {
+    font-weight: 700;
+    color: #e6007e;
+    background: #fef0f6;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+
+.ranking-date {
+    font-size: 0.75rem;
+    color: #999;
+    margin-left: 10px;
+}
+
+.loading, .saving {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
+.saving {
+    background: #fef0f6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.saving.visible {
+    display: block;
+}
+
+.no-scores {
+    text-align: center;
+    color: #888;
+    padding: 30px;
+}
+
 @media (max-width: 480px) {
     body {
         padding: 15px;

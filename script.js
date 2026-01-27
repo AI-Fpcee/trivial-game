@@ -1,3 +1,18 @@
+// Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyB6XZ4Ooh5cyXZuuWMa273ATOsch45F9Ok",
+    authDomain: "fedefarma-trivia.firebaseapp.com",
+    databaseURL: "https://fedefarma-trivia-default-rtdb.firebaseio.com",
+    projectId: "fedefarma-trivia",
+    storageBucket: "fedefarma-trivia.firebasestorage.app",
+    messagingSenderId: "836932838278",
+    appId: "1:836932838278:web:895e677ffeff8360c00207"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
 const allQuestions = [
     // HISTÒRIA DE FEDEFARMA (150 preguntes)
     { question: "Quin any es va fundar Fedefarma (Federació Farmacèutica)?", answers: ["1925", "1928", "1932", "1920"], correct: 1 },
@@ -30,8 +45,6 @@ const allQuestions = [
     { question: "El centre de Palau-Solità es va inaugurar al segle XX o XXI?", answers: ["Segle XX", "Segle XXI", "Entre els dos", "Cap"], correct: 1 },
     { question: "Quina va ser la primera gran innovació logística de Fedefarma?", answers: ["Robots", "Furgonetes", "Avions", "Trens"], correct: 1 },
     { question: "Fedefarma va néixer abans o després de la Guerra Civil?", answers: ["Abans (1928)", "Després (1940)", "Durant (1937)", "Molt després (1950)"], correct: 0 },
-
-    // ESTRUCTURA I ORGANITZACIÓ (150 preguntes)
     { question: "Quantes àrees principals d'actuació té Grup Fedefarma?", answers: ["2", "3", "4", "5"], correct: 2 },
     { question: "Quina NO és una de les 4 àrees principals de Fedefarma?", answers: ["Distribució", "Formació", "Màrqueting", "Laboratori"], correct: 2 },
     { question: "Quants centres logístics té Fedefarma actualment?", answers: ["6", "7", "8", "9"], correct: 2 },
@@ -62,8 +75,6 @@ const allQuestions = [
     { question: "Quina plataforma permet accedir als serveis online de Fedefarma?", answers: ["FedeCloud", "Farmacloud", "CloudFarma", "SferaCloud"], correct: 1 },
     { question: "Quin servei ofereix indicadors de negoci?", answers: ["Sfera", "Business Intelligence", "Nextera", "Iconika"], correct: 1 },
     { question: "Mentora forma part de quin àmbit de Fedefarma?", answers: ["Distribució", "Laboratori", "Formació i serveis", "Logística"], correct: 2 },
-
-    // VALORS I CULTURA (120 preguntes)
     { question: "Quants valors corporatius té Fedefarma?", answers: ["3", "4", "5", "6"], correct: 2 },
     { question: "Quin d'aquests NO és un valor de Fedefarma?", answers: ["Proximitat", "Innovació", "Competitivitat", "Compromís"], correct: 2 },
     { question: "Quin valor de Fedefarma es relaciona amb 'estar sempre al costat del col·lectiu farmacèutic'?", answers: ["Innovació", "Proximitat", "Passió", "Honestedat"], correct: 1 },
@@ -94,8 +105,6 @@ const allQuestions = [
     { question: "El compromís de Fedefarma és amb...?", answers: ["Només els socis", "El sector i la comunitat", "Només els treballadors", "Ningú en concret"], correct: 1 },
     { question: "Fedefarma busca generar un impacte...?", answers: ["Negatiu", "Positiu", "Neutre", "Inexistent"], correct: 1 },
     { question: "Els valors de Fedefarma es basen en...?", answers: ["Només beneficis", "Servei i professionalitat", "Competència", "Individualisme"], correct: 1 },
-
-    // SERVEIS I SOLUCIONS (150 preguntes)
     { question: "Què és Sfera de Fedefarma?", answers: ["Un medicament", "Un programa de gestió per a farmàcies", "Una revista", "Un esdeveniment"], correct: 1 },
     { question: "Quin tipus de gestió ofereix Sfera?", answers: ["Gestió local", "Gestió intel·ligent al núvol", "Gestió manual", "Gestió offline"], correct: 1 },
     { question: "Què és Nextera?", answers: ["Un laboratori", "Una plataforma CRM integrada", "Un centre logístic", "Una farmàcia"], correct: 1 },
@@ -126,8 +135,6 @@ const allQuestions = [
     { question: "Les Solucions 360º de Fedefarma són...?", answers: ["Parcials", "Integrals", "Bàsiques", "Opcionals"], correct: 1 },
     { question: "Farmacloud és una plataforma...?", answers: ["De jocs", "D'accés a serveis", "De xarxes socials", "De vídeos"], correct: 1 },
     { question: "Quants serveis inclou l'àrea de Solucions 360º?", answers: ["3", "5", "7 o més", "1"], correct: 2 },
-
-    // LABORATORI I PRODUCTES (120 preguntes)
     { question: "Com s'anomena el laboratori farmacèutic de Grup Fedefarma?", answers: ["Acofarma Labs", "GSN Farma", "Fedefarma Labs", "Actibios Labs"], correct: 1 },
     { question: "En què s'especialitza GSN Farma?", answers: ["Medicaments genèrics", "Salut natural", "Vacunes", "Antibiòtics"], correct: 1 },
     { question: "Quin tipus de productes crea GSN Farma?", answers: ["Només sintètics", "Productes innovadors amb principis actius naturals", "Només importats", "Només genèrics"], correct: 1 },
@@ -158,8 +165,6 @@ const allQuestions = [
     { question: "El laboratori de Fedefarma aposta per la salut...?", answers: ["Sintètica", "Natural", "Química", "Artificial"], correct: 1 },
     { question: "GSN combina ciència amb...?", answers: ["Màgia", "Coneixement tradicional", "Especulació", "Intuïció"], correct: 1 },
     { question: "L'objectiu de GSN és millorar...?", answers: ["Els beneficis", "El benestar i qualitat de vida", "La competència", "Els preus"], correct: 1 },
-
-    // FORMACIÓ (100 preguntes)
     { question: "Quin és el lema de formació de Fedefarma?", answers: ["Aprèn més", "Empodera el teu rol professional", "Estudia sempre", "Forma el teu futur"], correct: 1 },
     { question: "Què s'eleva quan eleves els teus coneixements segons Fedefarma?", answers: ["El teu sou", "La farmàcia", "El teu ego", "El teu negoci"], correct: 1 },
     { question: "Quin any es va crear el programa de formació continuada?", answers: ["1984", "1986", "1988", "1990"], correct: 1 },
@@ -190,8 +195,6 @@ const allQuestions = [
     { question: "El farmacèutic format ofereix millor...?", answers: ["Preu", "Atenció i servei", "Velocitat", "Quantitat"], correct: 1 },
     { question: "La formació de Fedefarma és...?", answers: ["Esporàdica", "Continuada i integral", "Obligatòria", "Puntual"], correct: 1 },
     { question: "L'àrea de formació acompanya...?", answers: ["Només iniciats", "En tots els àmbits", "Només experts", "Ningú"], correct: 1 },
-
-    // DISTRIBUCIÓ I LOGÍSTICA (120 preguntes)
     { question: "Quants centres logístics interconnectats té Fedefarma?", answers: ["6", "7", "8", "9"], correct: 2 },
     { question: "Quantes referències de productes ofereix Fedefarma?", answers: ["50.000", "100.000", "Més de 150.000", "200.000"], correct: 2 },
     { question: "Quin tipus de vademècum ofereix Fedefarma segons el seu web?", answers: ["El més petit", "El més ampli del mercat", "Només genèrics", "Només importats"], correct: 1 },
@@ -222,8 +225,6 @@ const allQuestions = [
     { question: "Els centres logístics estan repartits per...?", answers: ["Tot Espanya", "Catalunya, València i voltants", "Només Barcelona", "Europa"], correct: 1 },
     { question: "Fedefarma fa arribar a la farmàcia...?", answers: ["Problemes", "La salut i els productes", "Només factures", "Només publicitat"], correct: 1 },
     { question: "La interconnexió permet accedir a...?", answers: ["Menys estoc", "L'estoc de tots els centres", "Res nou", "Només informació"], correct: 1 },
-
-    // TECNOLOGIA I INNOVACIÓ (100 preguntes)
     { question: "Quina plataforma cloud ofereix Fedefarma per a gestió?", answers: ["CloudPharma", "Sfera", "PharmCloud", "GestFarma"], correct: 1 },
     { question: "Què és Farmacloud de Fedefarma?", answers: ["Un medicament", "Plataforma d'accés a serveis", "Un laboratori", "Una farmàcia"], correct: 1 },
     { question: "Quin tipus de CRM ofereix Fedefarma?", answers: ["Bàsic", "Nextera - CRM integrat", "Manual", "Extern"], correct: 1 },
@@ -254,8 +255,6 @@ const allQuestions = [
     { question: "El RFID permet...?", answers: ["Escoltar música", "Fer seguiment de productes", "Veure vídeos", "Res"], correct: 1 },
     { question: "Els robots als magatzems preparen...?", answers: ["Menjar", "Comandes de forma eficient", "Festes", "Reunions"], correct: 1 },
     { question: "La tecnologia de Fedefarma beneficia...?", answers: ["Ningú", "Les farmàcies sòcies", "Només Fedefarma", "La competència"], correct: 1 },
-
-    // MISSIÓ, VISIÓ I ESTRATÈGIA (100 preguntes)
     { question: "Quina és la missió de Grup Fedefarma?", answers: ["Guanyar diners", "Acompanyar farmàcies i agents de salut en els seus reptes", "Dominar el mercat", "Expandir-se internacionalment"], correct: 1 },
     { question: "A qui acompanya Fedefarma segons la seva missió?", answers: ["Només a pacients", "A farmàcies i agents de salut", "Només a metges", "Només a hospitals"], correct: 1 },
     { question: "En quins reptes acompanya Fedefarma?", answers: ["Només passats", "Presents i futurs", "Només presents", "Només futurs"], correct: 1 },
@@ -286,8 +285,6 @@ const allQuestions = [
     { question: "L'estratègia inclou les 4 àrees de...?", answers: ["Màrqueting", "Distribució, Formació, Solucions i Laboratori", "Vendes", "Res"], correct: 1 },
     { question: "L'acompanyament de Fedefarma dura...?", answers: ["Poc temps", "Tot el cicle de vida de la farmàcia", "Només l'inici", "Només el final"], correct: 1 },
     { question: "Ser cooperativa implica...?", answers: ["Competir amb els socis", "Treballar junts pels socis", "Ignorar els socis", "Res"], correct: 1 },
-
-    // PREGUNTES ADDICIONALS VARIADES (100 preguntes)
     { question: "Quin color predomina a la marca Fedefarma?", answers: ["Blau", "Verd", "Vermell", "Groc"], correct: 1 },
     { question: "Fedefarma és una cooperativa de...?", answers: ["Metges", "Farmacèutics", "Infermers", "Pacients"], correct: 1 },
     { question: "El web principal de Fedefarma és...?", answers: ["fedefarma.es", "grupfedefarma.com", "fedefarma.cat", "cooperativa.com"], correct: 1 },
@@ -330,25 +327,47 @@ const allQuestions = [
     { question: "GSN és expert en suplements des del...?", answers: ["1986", "1996", "2006", "2016"], correct: 1 }
 ];
 
+// Game state
 let questions = [];
 let currentQuestion = 0;
 let score = 0;
+let playerName = '';
 
-const startScreen = document.getElementById('start-screen');
+// DOM Elements - Screens
+const nameScreen = document.getElementById('name-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const resultScreen = document.getElementById('result-screen');
-const startBtn = document.getElementById('start-btn');
-const restartBtn = document.getElementById('restart-btn');
+const rankingScreen = document.getElementById('ranking-screen');
+
+// DOM Elements - Name screen
+const playerNameInput = document.getElementById('player-name');
+const nameError = document.getElementById('name-error');
+const startGameBtn = document.getElementById('start-game-btn');
+const viewRankingBtn = document.getElementById('view-ranking-btn');
+
+// DOM Elements - Quiz screen
+const currentPlayerEl = document.getElementById('current-player');
 const questionEl = document.getElementById('question');
 const answersEl = document.getElementById('answers');
 const questionNumberEl = document.getElementById('question-number');
 const scoreEl = document.getElementById('score');
 const progressEl = document.getElementById('progress');
+
+// DOM Elements - Result screen
 const resultEmoji = document.getElementById('result-emoji');
 const resultTitle = document.getElementById('result-title');
 const resultScore = document.getElementById('result-score');
 const resultMessage = document.getElementById('result-message');
+const savingIndicator = document.getElementById('saving-indicator');
+const restartBtn = document.getElementById('restart-btn');
+const rankingBtn = document.getElementById('ranking-btn');
 
+// DOM Elements - Ranking screen
+const rankingList = document.getElementById('ranking-list');
+const playBtn = document.getElementById('play-btn');
+const backBtn = document.getElementById('back-btn');
+
+// Helper functions
 function shuffleArray(array) {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -364,14 +383,109 @@ function getRandomQuestions(count) {
 }
 
 function showScreen(screen) {
-    [startScreen, quizScreen, resultScreen].forEach(s => s.classList.remove('active'));
-    screen.classList.add('active');
+    [nameScreen, quizScreen, resultScreen, rankingScreen].forEach(s => {
+        if (s) s.classList.remove('active');
+    });
+    if (screen) screen.classList.add('active');
+}
+
+function formatDate(timestamp) {
+    const date = new Date(timestamp);
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const year = date.getFullYear().toString().slice(-2);
+    return `${day}/${month}/${year}`;
+}
+
+// Firebase functions
+async function saveScore(name, points) {
+    try {
+        const scoresRef = database.ref('scores');
+        await scoresRef.push({
+            name: name,
+            score: points,
+            date: Date.now()
+        });
+        return true;
+    } catch (error) {
+        console.error('Error saving score:', error);
+        return false;
+    }
+}
+
+async function getTopScores(limit = 10) {
+    try {
+        const scoresRef = database.ref('scores');
+        const snapshot = await scoresRef.orderByChild('score').limitToLast(limit).once('value');
+        const scores = [];
+        snapshot.forEach(child => {
+            scores.push({
+                id: child.key,
+                ...child.val()
+            });
+        });
+        // Sort descending by score
+        return scores.sort((a, b) => b.score - a.score);
+    } catch (error) {
+        console.error('Error getting scores:', error);
+        return [];
+    }
+}
+
+// Display ranking
+async function displayRanking() {
+    rankingList.innerHTML = '<div class="loading">Carregant ranking...</div>';
+    
+    const scores = await getTopScores();
+    
+    if (scores.length === 0) {
+        rankingList.innerHTML = '<div class="no-scores">Encara no hi ha puntuacions.<br>Sigues el primer a jugar! 🎮</div>';
+        return;
+    }
+    
+    rankingList.innerHTML = scores.map((entry, index) => {
+        let positionClass = '';
+        let medal = '';
+        if (index === 0) { positionClass = 'gold'; medal = '🥇'; }
+        else if (index === 1) { positionClass = 'silver'; medal = '🥈'; }
+        else if (index === 2) { positionClass = 'bronze'; medal = '🥉'; }
+        else { medal = `${index + 1}.`; }
+        
+        return `
+            <div class="ranking-item">
+                <span class="ranking-position ${positionClass}">${medal}</span>
+                <span class="ranking-name">${entry.name}</span>
+                <span class="ranking-score">${entry.score}/10</span>
+                <span class="ranking-date">${formatDate(entry.date)}</span>
+            </div>
+        `;
+    }).join('');
+}
+
+// Game functions
+function validateName() {
+    const name = playerNameInput.value.trim();
+    if (name.length < 2) {
+        nameError.textContent = 'El nom ha de tenir almenys 2 caràcters';
+        return false;
+    }
+    if (name.length > 20) {
+        nameError.textContent = 'El nom no pot tenir més de 20 caràcters';
+        return false;
+    }
+    nameError.textContent = '';
+    return true;
 }
 
 function startGame() {
+    if (!validateName()) return;
+    
+    playerName = playerNameInput.value.trim();
     questions = getRandomQuestions(10);
     currentQuestion = 0;
     score = 0;
+    
+    currentPlayerEl.textContent = playerName;
     showScreen(quizScreen);
     showQuestion();
 }
@@ -417,7 +531,7 @@ function selectAnswer(index) {
     }, 1500);
 }
 
-function showResults() {
+async function showResults() {
     progressEl.style.width = '100%';
     
     const percentage = (score / questions.length) * 100;
@@ -425,31 +539,64 @@ function showResults() {
     if (percentage === 100) {
         resultEmoji.textContent = '🏆';
         resultTitle.textContent = 'Expert en Fedefarma!';
-        resultMessage.textContent = 'Coneixes a fons el Grup Fedefarma!';
+        resultMessage.textContent = `${playerName}, coneixes a fons el Grup Fedefarma!`;
     } else if (percentage >= 70) {
         resultEmoji.textContent = '💊';
         resultTitle.textContent = 'Molt bé!';
-        resultMessage.textContent = 'Tens excel·lents coneixements sobre Fedefarma!';
+        resultMessage.textContent = `${playerName}, tens excel·lents coneixements sobre Fedefarma!`;
     } else if (percentage >= 50) {
         resultEmoji.textContent = '👍';
         resultTitle.textContent = 'Ben fet!';
-        resultMessage.textContent = 'Vas pel bon camí, segueix aprenent!';
+        resultMessage.textContent = `${playerName}, vas pel bon camí, segueix aprenent!`;
     } else {
         resultEmoji.textContent = '📚';
         resultTitle.textContent = 'A estudiar!';
-        resultMessage.textContent = 'Visita grupfedefarma.com per saber-ne més.';
+        resultMessage.textContent = `${playerName}, visita grupfedefarma.com per saber-ne més.`;
     }
     
     resultScore.textContent = `${score} de ${questions.length} correctes`;
     
     showScreen(resultScreen);
+    
+    // Save score to Firebase
+    savingIndicator.classList.add('visible');
+    const saved = await saveScore(playerName, score);
+    savingIndicator.classList.remove('visible');
+    
+    if (!saved) {
+        savingIndicator.textContent = 'No s\'ha pogut guardar la puntuació';
+        savingIndicator.classList.add('visible');
+    }
 }
 
-startBtn.addEventListener('click', startGame);
-restartBtn.addEventListener('click', startGame);
+function goToNameScreen() {
+    showScreen(nameScreen);
+}
 
-// Mostrar nombre total de preguntes disponibles
+async function goToRanking() {
+    showScreen(rankingScreen);
+    await displayRanking();
+}
+
+// Event listeners
+startGameBtn.addEventListener('click', startGame);
+viewRankingBtn.addEventListener('click', goToRanking);
+restartBtn.addEventListener('click', goToNameScreen);
+rankingBtn.addEventListener('click', goToRanking);
+playBtn.addEventListener('click', goToNameScreen);
+backBtn.addEventListener('click', goToNameScreen);
+
+playerNameInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        startGame();
+    }
+});
+
+playerNameInput.addEventListener('input', () => {
+    nameError.textContent = '';
+});
+
+// Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    const subtitle = document.querySelector('#start-screen p');
-    subtitle.textContent = `${allQuestions.length} preguntes sobre Fedefarma - 10 aleatòries per partida`;
+    showScreen(nameScreen);
 });
