@@ -471,6 +471,8 @@ async function getTopScores(limit = 10) {
         const scoresRef = database.ref('scores');
         const snapshot = await scoresRef.orderByChild('score').limitToLast(limit).once('value');
         const scores = [];
+        const playerBestScore = localStorage.getItem('playerBestScore') || 0;
+        
         snapshot.forEach(child => {
             scores.push({
                 id: child.key,
@@ -589,25 +591,44 @@ async function showResults() {
     
     const percentage = (score / questions.length) * 100;
     
+    // Load and update personal best score from localStorage
+    const playerBestScore = parseInt(localStorage.getItem('playerBestScore')) || 0;
+    const isNewBestScore = score > playerBestScore;
+    if (isNewBestScore) {
+        localStorage.setItem('playerBestScore', score.toString());
+    }
+    
+    let message = '';
     if (percentage === 100) {
         resultEmoji.textContent = '🏆';
         resultTitle.textContent = 'Expert en Fedefarma!';
-        resultMessage.textContent = `${playerName}, coneixes a fons el Grup Fedefarma!`;
+        message = `${playerName}, coneixes a fons el Grup Fedefarma!`;
     } else if (percentage >= 70) {
         resultEmoji.textContent = '💊';
         resultTitle.textContent = 'Molt bé!';
-        resultMessage.textContent = `${playerName}, tens excel·lents coneixements sobre Fedefarma!`;
+        message = `${playerName}, tens excel·lents coneixements sobre Fedefarma!`;
     } else if (percentage >= 50) {
         resultEmoji.textContent = '👍';
         resultTitle.textContent = 'Ben fet!';
-        resultMessage.textContent = `${playerName}, vas pel bon camí, segueix aprenent!`;
+        message = `${playerName}, vas pel bon camí, segueix aprenent!`;
     } else {
         resultEmoji.textContent = '📚';
         resultTitle.textContent = 'A estudiar!';
-        resultMessage.textContent = `${playerName}, visita grupfedefarma.com per saber-ne més.`;
+        message = `${playerName}, visita grupfedefarma.com per saber-ne més.`;
     }
     
+    // Show score with /25
     resultScore.textContent = `${score} de ${questions.length} correctes`;
+    
+    // Show personal best score
+    const bestScoreDiv = document.createElement('div');
+    bestScoreDiv.style.marginTop = '10px';
+    bestScoreDiv.style.padding = '10px';
+    bestScoreDiv.style.background = '#fef0f6';
+    bestScoreDiv.style.borderRadius = '10px';
+    bestScoreDiv.style.color = '#e6007e';
+    bestScoreDiv.innerHTML = `<strong>La teva millor puntuació: ${playerBestScore}/25</strong>`;
+    resultScore.appendChild(bestScoreDiv);
     
     showScreen(resultScreen);
     
