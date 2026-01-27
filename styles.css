@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #00a884 0%, #006b5a 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #006b5a;
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
@@ -58,7 +58,7 @@ p {
 }
 
 .btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #00a884 0%, #006b5a 100%);
     color: white;
     border: none;
     padding: 15px 40px;
@@ -70,7 +70,7 @@ p {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 168, 132, 0.4);
 }
 
 .progress-bar {
@@ -82,7 +82,7 @@ p {
 }
 
 .progress {
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #00a884, #006b5a);
     height: 100%;
     width: 0%;
     transition: width 0.5s ease;
@@ -114,8 +114,8 @@ p {
 }
 
 .answer-btn:hover {
-    background: #e8e8e8;
-    border-color: #667eea;
+    background: #e8f5f2;
+    border-color: #00a884;
 }
 
 .answer-btn.correct {
@@ -142,11 +142,12 @@ p {
 #result-title {
     font-size: 2rem;
     margin-bottom: 15px;
+    color: #006b5a;
 }
 
 #result-score {
     font-size: 1.5rem;
-    color: #667eea;
+    color: #00a884;
     font-weight: bold;
     margin-bottom: 10px;
 }
