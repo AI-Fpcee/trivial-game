@@ -487,28 +487,35 @@ function showQuestion() {
     scoreEl.textContent = `Punts: ${score}`;
     progressEl.style.width = `${((currentQuestion) / questions.length) * 100}%`;
     
+    // Barrejar les respostes per evitar patrons previsibles
+    const answersWithIndex = q.answers.map((answer, index) => ({ answer, index }));
+    const shuffledAnswers = shuffleArray(answersWithIndex);
+    
     answersEl.innerHTML = '';
-    q.answers.forEach((answer, index) => {
+    shuffledAnswers.forEach((item, displayIndex) => {
         const btn = document.createElement('button');
         btn.className = 'answer-btn';
-        btn.textContent = answer;
-        btn.addEventListener('click', () => selectAnswer(index));
+        btn.textContent = item.answer;
+        btn.addEventListener('click', () => selectAnswer(item.index, displayIndex, shuffledAnswers));
         answersEl.appendChild(btn);
     });
 }
 
-function selectAnswer(index) {
+function selectAnswer(originalIndex, displayIndex, shuffledAnswers) {
     const q = questions[currentQuestion];
     const buttons = answersEl.querySelectorAll('.answer-btn');
     
     buttons.forEach(btn => btn.disabled = true);
     
-    if (index === q.correct) {
-        buttons[index].classList.add('correct');
+    // Comprovar si la resposta seleccionada és correcta
+    if (originalIndex === q.correct) {
+        buttons[displayIndex].classList.add('correct');
         score++;
     } else {
-        buttons[index].classList.add('incorrect');
-        buttons[q.correct].classList.add('correct');
+        buttons[displayIndex].classList.add('incorrect');
+        // Trobar la posició de la resposta correcta en les respostes barrejades
+        const correctDisplayIndex = shuffledAnswers.findIndex(item => item.index === q.correct);
+        buttons[correctDisplayIndex].classList.add('correct');
     }
     
     setTimeout(() => {
