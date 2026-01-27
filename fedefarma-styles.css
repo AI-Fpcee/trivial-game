@@ -436,3 +436,19 @@ p {
         align-items: center;
     }
 }
+
+/* Botó per netejar nom guardat */
+.btn-clear {
+    background: transparent;
+    border: none;
+    color: #999;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.btn-clear:hover {
+    color: #e6007e;
+}

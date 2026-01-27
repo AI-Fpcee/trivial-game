@@ -12,6 +12,10 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
+const auth = firebase.auth();
+
+// Autenticació anònima automàtica
+auth.signInAnonymously().catch(err => console.error('Error auth:', err));
 
 const allQuestions = [
     // HISTÒRIA DE FEDEFARMA (150 preguntes)
@@ -566,6 +570,7 @@ const playerNameInput = document.getElementById('player-name');
 const nameError = document.getElementById('name-error');
 const startGameBtn = document.getElementById('start-game-btn');
 const viewRankingBtn = document.getElementById('view-ranking-btn');
+const clearNameBtn = document.getElementById('clear-name-btn');
 
 // DOM Elements - Quiz screen
 const currentPlayerEl = document.getElementById('current-player');
@@ -608,11 +613,18 @@ function formatDate(timestamp) {
 // Firebase functions
 async function saveScore(name, points) {
     try {
+        const user = auth.currentUser;
+        if (!user) {
+            console.error('User not authenticated');
+            return false;
+        }
+        
         const scoresRef = database.ref('scores');
         await scoresRef.push({
             name: name,
             score: points,
-            date: Date.now()
+            date: Date.now(),
+            userId: user.uid
         });
         return true;
     } catch (error) {
@@ -689,6 +701,8 @@ function startGame() {
     if (!validateName()) return;
     
     playerName = playerNameInput.value.trim();
+    saveName(playerName); // Guardar nom a localStorage
+    
     questions = getRandomQuestions(25);
     currentQuestion = 0;
     score = 0;
@@ -822,6 +836,12 @@ backBtn.addEventListener('click', goToNameScreen);
 
 playerNameInput.addEventListener('input', () => {
     nameError.textContent = '';
+    // Mostrar/amagar botó de netejar segons si hi ha text
+    if (playerNameInput.value.length > 0) {
+        clearNameBtn.style.display = 'inline-block';
+    } else {
+        clearNameBtn.style.display = 'none';
+    }
 });
 
 playerNameInput.addEventListener('keypress', (e) => {
@@ -830,7 +850,35 @@ playerNameInput.addEventListener('keypress', (e) => {
     }
 });
 
+clearNameBtn.addEventListener('click', () => {
+    clearName();
+});
+
+// Guardar nom a localStorage
+function saveName(name) {
+    localStorage.setItem('trivialPlayerName', name);
+}
+
+// Carregar nom de localStorage
+function loadName() {
+    return localStorage.getItem('trivialPlayerName') || '';
+}
+
+// Netejar nom guardat
+function clearName() {
+    localStorage.removeItem('trivialPlayerName');
+    playerNameInput.value = '';
+    playerNameInput.focus();
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     showScreen(nameScreen);
+    
+    // Carregar nom guardat si existeix
+    const savedName = loadName();
+    if (savedName) {
+        playerNameInput.value = savedName;
+        clearNameBtn.style.display = 'inline-block';
+    }
 });
