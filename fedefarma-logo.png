@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang='ca'>
+<head>
+    <script id="Cookiebot" data-culture="ca" src="https://consent.cookiebot.com/uc.js" data-cbid="65e37c35-0c79-4abc-9030-be7bbe05d919" data-blockingmode="auto" type="text/javascript"></script>
+
+    
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href="/css/app.css?v=2.4">
+    <link rel='stylesheet' href="/css/tailwind.css?v=2.4">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel='icon' type='image/x-icon' href='https://grupfedefarma.com/storage/settings/v5Vji1PbqADQ9gT9tA6IQ2eBg0qKKYrLdIYXt45N.png'>
+            
+            
+            
+    <title>Grup Fedefarma</title>
+<meta name="description" content="A Grup Fedefarma el primer ets tu i volem que trobis tot allò que busques.   
+Per això t&#039;acompanyem amb la força de la distribució farmacèutica de   
+Fedefarma i l&#039;especialització d&#039;Actibios, el majorista líder en marques   
+especialitzades.  
+T&#039;acompanyem en tots els reptes que pugui tenir la teva farmàcia a través   
+d&#039;un ecosistema integral de solucions innovadores i un acompanyament   
+individualitzat." />
+<meta property="og:title" content="Grup Fedefarma"/>
+<meta property="og:url" content="https://grupfedefarma.com"/>
+<meta property="og:image" content="settings/scPkPmBBlJvBnAZxEyvRq0DRXHoPXbfPwjMFyJDj.png" />
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="A Grup Fedefarma el primer ets tu i volem que trobis tot allò que busques.   
+Per això t&#039;acompanyem amb la força de la distribució farmacèutica de   
+Fedefarma i l&#039;especialització d&#039;Actibios, el majorista líder en marques   
+especialitzades.  
+T&#039;acompanyem en tots els reptes que pugui tenir la teva farmàcia a través   
+d&#039;un ecosistema integral de solucions innovadores i un acompanyament   
+individualitzat." />
+                        <link rel="alternate" hreflang="es" href="https://grupfedefarma.com/es" />
+            
+                        <script>
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPSTLV9G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        </script>
+    
+    
+            <script src="https://www.google.com/recaptcha/api.js?render=6LeawVAsAAAAAAWCXTTUcuH3Ae9sMtyKmpyY-6iX"></script>
+    </head>
+<body class="">
+
+    <header class="header">
+    <div class="container">
+        <div class="container__bx">
+                            <a class="site-branding" href="https://grupfedefarma.com">
+                    <img class="logo" src="https://grupfedefarma.com/storage/settings/scPkPmBBlJvBnAZxEyvRq0DRXHoPXbfPwjMFyJDj.png" alt="" />
+                </a>
+                        <div class="header__col">
+                                    <div class="header__menu">
+                        <div class="header__it header__it--sup">
+    <nav class="menu">
+        <ul>
+                                            <li class=" has-child">
+                    <a href="https://grupfedefarma.com/grup-cooperatiu" >Grup cooperatiu</a>
+                                            <ul class="submenu">
+                                                            <li class="menu__item">
+    <a href="https://grupfedefarma.com/compromis-i-sostenibilitat" >Compromís i sostenibilitat</a>
+    </li>
+                                                            <li class="menu__item">
+    <a href="https://grupfedefarma.com/govern-participatiu" >Govern participatiu</a>
+    </li>
+                                                    </ul>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/laboratoris" >Laboratoris</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/universitats-centres-educatius" >Universitats</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/treballa-amb-nosaltres" >Treballa amb nosaltres</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/area-premsa" >Àrea premsa</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/fes-te-socio" >Fes-te soci</a>
+                                    </li>
+                    </ul>
+    </nav>
+</div>
+                        <div class="header__it header__it--inf">
+    <nav class="menu">
+        <ul>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/distribucio" >Distribució</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/formacio" >Formació</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/serveis-per-impulsar-la-farmacia" >Solucions per impulsar la farmàcia</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://gsnfarma.com/" >Laboratori farmacèutic</a>
+                                    </li>
+                    </ul>
+    </nav>
+</div>
+                    </div>
+                                <div class="header__info">
+                    <a href="https://accounts.farmacloud.io/login?response_type=code&amp;client_id=fedefarma-home&amp;redirect_uri=https%3A%2F%2Fback-cloud.grupfedefarma.com%2Fauthorization%2Fcode&amp;scope=organizations-api-all&amp;lang=ca_es" class="btn-cloud" target="_blank">Cloud</a>
+                    <div class="lang-sel">
+        <img src="https://grupfedefarma.com/imgs/icons/icon-world.png" alt="Selector de idioma" title="Selector de idioma">
+        <div class="lang-sel__current"><span>ca</span></div>
+        <div class="lang-sel__toggle">
+                                                                        <a class="lang-sel__item" rel="alternate" hreflang="es" href="https://grupfedefarma.com/es" class="">es</a>
+                       
+                 
+                             
+                    </div>
+    </div>
+                    <div class="m-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="m-hamb">
+                    <div class="header__it header__it--sup">
+    <nav class="menu">
+        <ul>
+                                            <li class=" has-child">
+                    <a href="https://grupfedefarma.com/grup-cooperatiu" >Grup cooperatiu</a>
+                                            <ul class="submenu">
+                                                            <li class="menu__item">
+    <a href="https://grupfedefarma.com/compromis-i-sostenibilitat" >Compromís i sostenibilitat</a>
+    </li>
+                                                            <li class="menu__item">
+    <a href="https://grupfedefarma.com/govern-participatiu" >Govern participatiu</a>
+    </li>
+                                                    </ul>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/laboratoris" >Laboratoris</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/universitats-centres-educatius" >Universitats</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/treballa-amb-nosaltres" >Treballa amb nosaltres</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/area-premsa" >Àrea premsa</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://www.fedefarma.com/ca/fes-te-socio" >Fes-te soci</a>
+                                    </li>
+                    </ul>
+    </nav>
+</div>
+                            <div class="header__it header__it--inf">
+    <nav class="menu">
+        <ul>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/distribucio" >Distribució</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/formacio" >Formació</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://grupfedefarma.com/serveis-per-impulsar-la-farmacia" >Solucions per impulsar la farmàcia</a>
+                                    </li>
+                                            <li class="">
+                    <a href="https://gsnfarma.com/" >Laboratori farmacèutic</a>
+                                    </li>
+                    </ul>
+    </nav>
+</div>
+                <div class="lang-sel">
+        <img src="https://grupfedefarma.com/imgs/icons/icon-world.png" alt="Selector de idioma" title="Selector de idioma">
+        <div class="lang-sel__current"><span>ca</span></div>
+        <div class="lang-sel__toggle">
+                                                                        <a class="lang-sel__item" rel="alternate" hreflang="es" href="https://grupfedefarma.com/es" class="">es</a>
+                       
+                 
+                             
+                    </div>
+    </div>
+    </div>
+
+    
+    
+
+    
+
+
+
+
+  <section class="mdl-video">
+    <div class="mdl-video__txt">
+      <h1><p><strong>Un grup cooperatiu amb més de 95 anys</strong> d’experiència al servei de la salut</p> </h1>
+    </div>
+    <div class="mdl-video__actions">
+      <button class="btn-video"><img src="https://grupfedefarma.com/imgs/icons/pause.png"></button>
+    </div>
+    <div class="mdl-video__bg"></div>
+              <video class="video" width="320" height="240" muted autoplay loop>
+                    <source src="https://grupfedefarma.com/storage/media/2025/02/video-cabecera-home-v2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+    </video>
+  </section>
+
+
+<section class="mdl-areas">
+  <div class="container">
+    <div class="container__bx">
+      <h2><strong>4 àrees per acompanyar-te</strong> en tots  els àmbits de la teva farmàcia </h2>
+                <div class="mdl-areas__bx">
+                      <div class="mdl-areas__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/arees01_1440x0.jpg" srcset="https://grupfedefarma.com/storage/media/2025/02/arees01_560x0.jpg 560w, https://grupfedefarma.com/storage/media/2025/02/arees01_768x0.jpg 768w, https://grupfedefarma.com/storage/media/2025/02/arees01_1200x0.jpg 1200w, https://grupfedefarma.com/storage/media/2025/02/arees01_1440x0.jpg 1440w" alt="" title=""  />
+        
+                            <h3>Distribució</h3>
+              <a href="https://grupfedefarma.com/distribucio" class="btn" target="_self">
+                  Saber-ne més
+              </a>
+            </div>
+                      <div class="mdl-areas__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/arees02_1440x0.jpg" srcset="https://grupfedefarma.com/storage/media/2025/02/arees02_560x0.jpg 560w, https://grupfedefarma.com/storage/media/2025/02/arees02_768x0.jpg 768w, https://grupfedefarma.com/storage/media/2025/02/arees02_1200x0.jpg 1200w, https://grupfedefarma.com/storage/media/2025/02/arees02_1440x0.jpg 1440w" alt="" title=""  />
+        
+                            <h3>Formació</h3>
+              <a href="https://grupfedefarma.com/formacio" class="btn" target="_self">
+                  Saber-ne més
+              </a>
+            </div>
+                      <div class="mdl-areas__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/arees03_1440x0.jpg" srcset="https://grupfedefarma.com/storage/media/2025/02/arees03_560x0.jpg 560w, https://grupfedefarma.com/storage/media/2025/02/arees03_768x0.jpg 768w, https://grupfedefarma.com/storage/media/2025/02/arees03_1200x0.jpg 1200w, https://grupfedefarma.com/storage/media/2025/02/arees03_1440x0.jpg 1440w" alt="" title=""  />
+        
+                            <h3>Solucions 360º</h3>
+              <a href="https://grupfedefarma.com/assessorament-expert" class="btn" target="_self">
+                  Saber-ne més
+              </a>
+            </div>
+                      <div class="mdl-areas__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/arees04_1440x0.jpg" srcset="https://grupfedefarma.com/storage/media/2025/02/arees04_560x0.jpg 560w, https://grupfedefarma.com/storage/media/2025/02/arees04_768x0.jpg 768w, https://grupfedefarma.com/storage/media/2025/02/arees04_1200x0.jpg 1200w, https://grupfedefarma.com/storage/media/2025/02/arees04_1440x0.jpg 1440w" alt="" title=""  />
+        
+                            <h3>Laboratori farmacèutic</h3>
+              <a href="https://gsnfarma.com/" class="btn" target="_self">
+                  Saber-ne més
+              </a>
+            </div>
+                    </div>
+              </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="mdl-home-distribution">
+  <div class="container">
+    <div class="container__bx">
+      <div class="mdl-home-distribution__intro">
+        <h2>Distribució</h2>        <p>Fem arribar la salut a la teva farmàcia</p>      </div>
+                        <div class="mdl-home-distribution__it fedefarma" style="background-image: url('https://grupfedefarma.com/storage/media/2025/02/bg-fedefarma_1440x0.jpg')">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/logo-fedefarma.png" alt="" title=""  />
+        
+                            <p>8 centres logístics interconnectats entre si i més de 150.000 referències 
+d’àmplia gamma per oferir-te el vademècum més ampli del mercat i la 
+màxima rendibilitat a la teva farmàcia</p>
+                              <a href="https://grupfedefarma.com/el-primer-ets-tu" class="btn" target="_blank">
+                    Saber-ne més
+                </a>
+                        </div>
+                  <div class="mdl-home-distribution__it actibios" style="background-image: url('https://grupfedefarma.com/storage/media/2025/02/bg-actibios_1440x0.jpg')">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/logo-actibios.png" alt="" title=""  />
+        
+                            <p><h3 class="" style="text-align: center;">D’especialista a especialista.</h3><p>Tenim el que tant busques. <br>
+Majorista líder en marques especialitzades</p></p>
+                              <a href="https://actibios.com/" class="btn" target="_blank">
+                    Saber-ne més
+                </a>
+                        </div>
+                  <div class="mdl-home-distribution__it acofarma" style="background-image: url('https://grupfedefarma.com/storage/media/2026/01/home-distribucio_1440x0.jpg')">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/logo-acofarma.png" alt="" title=""  />
+        
+                            <p><p>La marca de la teva cooperativa.</p></p>
+                              <a href="https://www.acofarma.com/" class="btn" target="_blank">
+                    Saber-ne més
+                </a>
+                        </div>
+                  </div>
+  </div>
+</section>
+
+
+      <section class="mdl-home-training" style="background-image: url('https://grupfedefarma.com/storage/media/2025/02/bg-mentora_1440x0.jpg')">
+      <div class="container">
+        <div class="container__bx">
+          <h2>Formació</h2>
+          <p>Empodera el teu rol professional</p>
+                              <img src="https://grupfedefarma.com/storage/media/2025/02/logo-mentora.png" alt="" title=""  />
+        
+                    <h3><p>Quan eleves els teus coneixements, eleves la farmàcia</p></h3>
+                      <a href="https://grupfedefarma.com/formacio" class="btn" target="_blank">
+              Saber-ne més
+            </a>
+                  </div>
+      </div>
+    </section>
+  
+
+
+<section class="mdl-home-solutions">
+  <div class="container">
+    <div class="container__bx">
+      <div class="mdl-home-solutions__intro">
+        <h2>Solucions 360º</h2>
+        <p>La teva farmàcia el teu creixement. Descobreix solucions innovadores que t'acompanyen de manera integral.</p>
+      </div>
+            <div class="mdl-home-solutions__bx">
+                  <div class="mdl-home-solutions__it ">
+                                  <img src="https://grupfedefarma.com/storage/media/2025/02/sfera.jpg" alt="" title=""  />
+        
+                        <div class="mdl-home-solutions__txt">
+              <h3>Sfera</h3>
+              <p>El programa de gestió intel·ligent al cloud</p>
+                              <a href="https://sferafarmacia.com/ca" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+          </div>
+                  <div class="mdl-home-solutions__it ">
+                                  <img src="https://grupfedefarma.com/storage/media/2025/02/nextera.jpg" alt="" title=""  />
+        
+                        <div class="mdl-home-solutions__txt">
+              <h3>Nextera</h3>
+              <p>Plataforma de CRM integrada</p>
+                              <a href="https://nexterafarma.com/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+          </div>
+                  <div class="mdl-home-solutions__it ">
+                                  <img src="https://grupfedefarma.com/storage/media/2025/02/business.jpg" alt="" title=""  />
+        
+                        <div class="mdl-home-solutions__txt">
+              <h3>Business Intelligence</h3>
+              <p>Indicadors de negoci i comparativa de mercat</p>
+                              <a href="https://www.fedefarma.com/ca/business-intelligence" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+          </div>
+                  <div class="mdl-home-solutions__it ">
+                                  <img src="https://grupfedefarma.com/storage/media/2025/02/iconika.jpg" alt="" title=""  />
+        
+                        <div class="mdl-home-solutions__txt">
+              <h3>Iconika</h3>
+              <p>Comunitat de farmacèutics emprenedors</p>
+                              <a href="https://farmaciasiconika.com/es/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+          </div>
+                  <div class="mdl-home-solutions__it ">
+                                  <img src="https://grupfedefarma.com/storage/media/2025/02/rubrica.jpg" alt="" title=""  />
+        
+                        <div class="mdl-home-solutions__txt">
+              <h3>Rúbrica</h3>
+              <p>Compravenda de farmàcies</p>
+                              <a href="https://rubricafarma.com/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+          </div>
+                  <div class="mdl-home-solutions__it ">
+                                  <img src="https://grupfedefarma.com/storage/media/2025/02/corintia.jpg" alt="" title=""  />
+        
+                        <div class="mdl-home-solutions__txt">
+              <h3>Corintia</h3>
+              <p>Disseny de farmàcies</p>
+                              <a href="https://corintiafarma.com/es/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+          </div>
+                  <div class="mdl-home-solutions__it ">
+                                  <img src="https://grupfedefarma.com/storage/media/2025/04/istock-499602860.jpg" alt="" title=""  />
+        
+                        <div class="mdl-home-solutions__txt">
+              <h3>Ortoteca</h3>
+              <p>La manera més fàcil de potenciar l'ortopèdia a la teva farmàcia</p>
+                              <a href="https://ortoteca.com/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+          </div>
+              </div>
+          </div>
+  </div>
+</section>
+
+
+
+
+<section class="mdl-home-laboratory">
+  <div class="container">
+    <div class="container__bx">
+      <div class="mdl-home-laboratory__intro">
+        <h2><strong>Laboratori farmacèutic</strong>  de salut natural, innovació i especialització<br> </h2>
+                          <img src="https://grupfedefarma.com/storage/media/2025/09/gsn-farma-3.png" alt="" title=""  />
+        
+                <p>
+          <p><b>GSN Farma</b> és un laboratori especialitzat en salut natural, dedicat a la creació de productes innovadors que combinen els <b>millors principis actius naturals</b> amb el coneixement tradicional. El nostre objectiu és millorar el <b>benestar i la qualitat de vida mitjançant solucions naturals</b>, eficients i segures, que respecten els més alts estàndards de qualitat i seguretat en cada fórmula</p><p style="text-align: center; "><a href="https://gsnfarma.com/" target="_blank"><u>Més informació</u></a><br></p>
+        </p>
+      </div>
+              <div class="mdl-home-laboratory__bx">
+                      <div class="mdl-home-laboratory__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/orissens.jpg" alt="" title=""  />
+        
+                            <p>Marca especialista en la salut de la dona exclusiva per al canal farmàcia.</p>
+                              <a href="https://www.orissens.com" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+                      <div class="mdl-home-laboratory__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/gsn.png" alt="" title=""  />
+        
+                            <p>Experts en suplements nutricionals des de 1996</p>
+                              <a href="https://gsn.es/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+                      <div class="mdl-home-laboratory__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/nakama.jpg" alt="" title=""  />
+        
+                            <p>Nakama és la marca de salut animal de la farmàcia que ajuda i acompanya en la recomanació creuada</p>
+                              <a href="https://www.nakamanimals.com/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+                      <div class="mdl-home-laboratory__it">
+                                      <img src="https://grupfedefarma.com/storage/media/2025/02/grupo-2519.png" alt="" title=""  />
+        
+                            <p>La solució més segura i eficaç per a l'aigua de consum diari</p>
+                              <a href="https://www.esenta.es/" class="btn btn--color" target="_blank">
+                  Saber-ne més
+                </a>
+                          </div>
+                  </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    
+  </div>
+</section>
+
+
+    <section class="mdl-newsletter" style="background-image: url('https://grupfedefarma.com/imgs/demo/bg-mdlnewsletter.jpg');">
+    <div class="container">
+        <div class="container__bx">
+            <h2><strong>Contacta</strong> amb nosaltres.</h2>
+            <form id="contact_form" data-action="https://grupfedefarma.com/contact_submit" data-default_error_msg="S&#039;ha produït un error. Intenteu-ho més tard.">
+    <input type="hidden" name="_token" value="B0FMJaiIuZ3KQCvnXtSMG4RHKRDmz9H7QzkmEouz" />
+    <div class="form-group">
+        <input type="text" class="form-control" name="name" placeholder="Nom *" required>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Email *" required>
+    </div>
+    <div class="form-group">
+        <select class="form-control styled-select" name="contact_reason" required>
+            <option value="" disabled selected>Sobre quin tema ens vols contactar? *</option>
+            <option value="communication">Vull contactar amb l&#039;equip de comunicació</option>
+            <option value="join_team">Vull unir-me a l&#039;equip de fedefarma</option>
+            <option value="advantages">Vull conèixer més avantatges de ser soci</option>
+            <option value="partner_labs">Vull formar part dels laboratoris partner</option>
+            <option value="other">Altres consultes</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <textarea id="message" name="message" rows="4" placeholder="Comentari *" required></textarea>
+    </div>
+    <div class="form-group form-group--inline">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" name="privacy_policy_acceptance" value="1" required/>
+            <label class="form-check-label" for="gridCheck">
+                Accepto la <a href="#" required>Política de privadesa</a>.
+            </label>
+        </div>
+        <button class="btn btn--color" type="submit">Enviar</button>
+    </div>
+    <div class="js-feedback" style="display:none;"></div>
+</form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="container__bx">
+            <div class="footer__it">
+                <a href="#">
+                    
+                    <img class="logo" src="https://grupfedefarma.com/imgs/demo/logo-fedefarma-white.png" alt="" />
+                </a>
+            </div>
+            <div class="footer__it">
+            <h3>Grup Fedefarma</h3>
+        <ul>
+                    <li class="menu__item"><a href="https://grupfedefarma.com/distribucio" >Distribució</a></li>
+                    <li class="menu__item"><a href="https://grupfedefarma.com/formacio" >Formació</a></li>
+                    <li class="menu__item"><a href="https://grupfedefarma.com/serveis-per-impulsar-la-farmacia" >Solucions per impulsar la farmàcia</a></li>
+                    <li class="menu__item"><a href="https://gsnfarma.com/" >Laboratori farmacèutic</a></li>
+                    <li class="menu__item"><a href="https://grupfedefarma.com/grup-cooperatiu" >Grup Cooperatiu</a></li>
+            </ul>
+</div>
+            <div class="footer__it">
+            <h3>Coneix-nos</h3>
+        <ul>
+                    <li class="menu__item"><a href="https://www.fedefarma.com/ca/faq" >FAQ&#039;s</a></li>
+                    <li class="menu__item"><a href="https://grupfedefarma.com/treballa-amb-nosaltres" >Treballa amb nosaltres</a></li>
+            </ul>
+</div>
+            <div class="footer__it">
+            <h3>Més informació</h3>
+        <ul>
+                    <li class="menu__item"><a href="https://www.fedefarma.com/ca/area-premsa" >Àrea premsa</a></li>
+                    <li class="menu__item"><a href="https://www.fedefarma.com/ca/alertes-sanitaries" >Alertes sanitàries</a></li>
+                    <li class="menu__item"><a href="https://www.aemps.gob.es/" >AEMPS</a></li>
+            </ul>
+</div>
+            <div class="footer__it">
+                    <h3><a href="https://grupfedefarma.com/formulari-de-contacte">Contacte</a></h3>
+        <ul>
+                    <li class="menu__item"><a href="https://grupfedefarma.com/contacte"  target="_blank">Fedefarma</a></li>
+                    <li class="menu__item"><a href="https://actibios.com/"  target="_blank">Actibios</a></li>
+                    <li class="menu__item"><a href="https://www.acofarma.com/"  target="_blank">Acofarma</a></li>
+                    <li class="menu__item"><a href="https://gsn.es/"  target="_blank">GSN Farma</a></li>
+                    <li class="menu__item"><a href="https://www.mentorafarma.com/"  target="_blank">Mentora</a></li>
+            </ul>
+</div>
+            
+                    
+            <div class="footer__it">
+    <ul>
+            <li><a href="https://grupfedefarma.com/politica-de-privacitat"  >Política de privacitat</a></li>
+            <li><a href="https://grupfedefarma.com/politica-de-cookies"  >Política de cookies</a></li>
+            <li><a href="https://grupfedefarma.com/avis-legal"  >Avís legal</a></li>
+            <li><a href="https://grupfedefarma.com/politica-del-sistema-intern-dinformacio"  >Política del sistema intern d&#039;informació</a></li>
+        </ul>
+</div>                
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/app.js?v=2.4"></script>
+
+    
+
+    <script>
+        function adjustBodyPadding() {
+            const header = document.querySelector("header");
+            if (header) {
+                const headerHeight = header.offsetHeight;
+                document.body.style.paddingTop = headerHeight + "px";
+            }
+        }
+        window.addEventListener("load", adjustBodyPadding);
+        window.addEventListener("resize", adjustBodyPadding);
+    </script>
+
+        
+</body>
+</html>
