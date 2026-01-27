@@ -508,7 +508,7 @@ async function displayRanking() {
             <div class="ranking-item">
                 <span class="ranking-position ${positionClass}">${medal}</span>
                 <span class="ranking-name">${entry.name}</span>
-                <span class="ranking-score">${entry.score}/10</span>
+                <span class="ranking-score">${entry.score}/25</span>
                 <span class="ranking-date">${formatDate(entry.date)}</span>
             </div>
         `;
