@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +7,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #00a884 0%, #006b5a 100%);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e6007e 0%, #b8006a 50%, #8a0050 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,12 +18,17 @@ body {
 
 .container {
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
     padding: 40px;
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
     text-align: center;
+}
+
+.logo {
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
 .screen {
@@ -39,61 +46,106 @@ body {
 }
 
 h1 {
-    color: #006b5a;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
+    color: #e6007e;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 h2 {
-    color: #444;
+    color: #333;
     margin-bottom: 25px;
-    font-size: 1.3rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 500;
 }
 
 p {
     color: #666;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.subtitle {
+    background: linear-gradient(135deg, #f8e1ed 0%, #fce4f0 100%);
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: #b8006a;
+    font-weight: 500;
     margin-bottom: 30px;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .btn {
-    background: linear-gradient(135deg, #00a884 0%, #006b5a 100%);
+    background: linear-gradient(135deg, #e6007e 0%, #c4006b 100%);
     color: white;
     border: none;
-    padding: 15px 40px;
-    font-size: 1.2rem;
+    padding: 16px 45px;
+    font-size: 1.1rem;
+    font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 168, 132, 0.4);
+    box-shadow: 0 15px 40px rgba(230, 0, 126, 0.4);
+    background: linear-gradient(135deg, #ff1a8c 0%, #e6007e 100%);
+}
+
+.btn:active {
+    transform: translateY(-1px);
 }
 
 .progress-bar {
-    background: #e0e0e0;
+    background: #f0f0f0;
     border-radius: 10px;
-    height: 10px;
-    margin-bottom: 20px;
+    height: 8px;
+    margin-bottom: 25px;
     overflow: hidden;
 }
 
 .progress {
-    background: linear-gradient(90deg, #00a884, #006b5a);
+    background: linear-gradient(90deg, #e6007e, #ff4da6);
     height: 100%;
     width: 0%;
     transition: width 0.5s ease;
+    border-radius: 10px;
 }
 
 .question-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #888;
     font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.question-info span {
+    background: #f8f8f8;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+#question-container {
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#question {
+    color: #333;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
 .answers {
@@ -103,75 +155,145 @@ p {
 }
 
 .answer-btn {
-    background: #f5f5f5;
-    border: 2px solid #e0e0e0;
-    padding: 15px 20px;
-    border-radius: 12px;
+    background: white;
+    border: 2px solid #e8e8e8;
+    padding: 16px 22px;
+    border-radius: 14px;
     cursor: pointer;
     font-size: 1rem;
     text-align: left;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #444;
 }
 
 .answer-btn:hover {
-    background: #e8f5f2;
-    border-color: #00a884;
+    background: #fef0f6;
+    border-color: #e6007e;
+    transform: translateX(5px);
 }
 
 .answer-btn.correct {
-    background: #d4edda;
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
     border-color: #28a745;
     color: #155724;
 }
 
 .answer-btn.incorrect {
-    background: #f8d7da;
+    background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
     border-color: #dc3545;
     color: #721c24;
 }
 
 .answer-btn:disabled {
     cursor: not-allowed;
+    transform: none;
 }
 
 #result-emoji {
     font-size: 5rem;
     margin-bottom: 20px;
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
 }
 
 #result-title {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #006b5a;
+    color: #e6007e;
+    font-weight: 700;
 }
 
 #result-score {
-    font-size: 1.5rem;
-    color: #00a884;
-    font-weight: bold;
+    font-size: 1.4rem;
+    color: #e6007e;
+    font-weight: 700;
     margin-bottom: 10px;
+    background: linear-gradient(135deg, #fef0f6 0%, #fce4f0 100%);
+    padding: 15px 25px;
+    border-radius: 15px;
+    display: inline-block;
 }
 
 #result-message {
     font-size: 1.1rem;
     color: #666;
+    margin-bottom: 30px;
+}
+
+.footer-text {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.footer-text a {
+    color: #e6007e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Decorative elements */
+.container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
     .container {
-        padding: 25px;
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+    
+    .logo {
+        max-width: 160px;
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
-    h2 {
-        font-size: 1.1rem;
+    h2, #question {
+        font-size: 1.05rem;
     }
     
     .btn {
-        padding: 12px 30px;
+        padding: 14px 35px;
         font-size: 1rem;
+    }
+    
+    #question-container {
+        padding: 20px 15px;
+    }
+    
+    .answer-btn {
+        padding: 14px 18px;
+        font-size: 0.95rem;
+    }
+    
+    .question-info {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 }

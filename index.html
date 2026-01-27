@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💊 Trivial Fedefarma</title>
+    <title>Trivial Fedefarma | Posa a prova els teus coneixements</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo-fedefarma.svg">
 </head>
 <body>
     <div class="container">
         <div id="start-screen" class="screen active">
-            <h1>💊 Trivial Fedefarma</h1>
-            <p>Posa a prova els teus coneixements amb 10 preguntes sobre Fedefarma</p>
+            <img src="logo-fedefarma.svg" alt="Fedefarma" class="logo">
+            <h1>Trivial Fedefarma</h1>
+            <p class="subtitle">Posa a prova els teus coneixements sobre el Grup Fedefarma</p>
+            <p>Respon 10 preguntes aleatòries i descobreix quant saps sobre la nostra cooperativa, història, valors i serveis.</p>
             <button id="start-btn" class="btn">Començar</button>
+            <p class="footer-text">Més de 95 anys al servei de la farmàcia<br><a href="https://grupfedefarma.com" target="_blank">grupfedefarma.com</a></p>
         </div>
 
         <div id="quiz-screen" class="screen">
+            <img src="logo-fedefarma.svg" alt="Fedefarma" class="logo" style="max-width: 120px; margin-bottom: 15px;">
             <div class="progress-bar">
                 <div id="progress" class="progress"></div>
             </div>
@@ -29,11 +34,13 @@
         </div>
 
         <div id="result-screen" class="screen">
+            <img src="logo-fedefarma.svg" alt="Fedefarma" class="logo" style="max-width: 150px;">
             <h1 id="result-emoji">🏆</h1>
             <h2 id="result-title">Felicitats!</h2>
             <p id="result-score"></p>
             <p id="result-message"></p>
             <button id="restart-btn" class="btn">Tornar a jugar</button>
+            <p class="footer-text">Visita <a href="https://grupfedefarma.com" target="_blank">grupfedefarma.com</a> per saber-ne més</p>
         </div>
     </div>
     <script src="script.js"></script>
